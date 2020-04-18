@@ -1,9 +1,9 @@
 public class User {
-    public String User;
+    public String userName;
     public int age;
 
-    public User(String User, int age) {
-        this.User = User;
+    public User(String userName, int age) {
+        this.userName = userName;
         this.age = age;
     }
 
@@ -16,9 +16,17 @@ public class User {
         User[] users = {tomek, bartek, magda, szymon, karol};
 
         int result = 0;
-        for (int i=0; i<10; i++){
-            result = result + age[i];
+        for (int i=0; i<5; i++){
+            result = result + users[i].age;
+
         }
-ring[] User = new String[] {"SA", "DF", "LL"};
+        int avg = result / users.length;
+
+        /*jeżeli wiek usera jest mniejszy od średniej wyświetl
+                users[0].age<avg ----- w for
+       */
+
+
+//Sring[] User = new String[] {"SA", "DF", "LL"};
     }
 }
