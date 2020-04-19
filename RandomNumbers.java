@@ -1,5 +1,5 @@
 import java.util.Random;
-
+//losowanie liczb od 0 do 30 i suma do 5000
 public class RandomNumbers {
     private static int sum;
     private static int max;
@@ -10,10 +10,8 @@ public class RandomNumbers {
 
         while (sum < 5000) {
             int a = r.nextInt(31);
-            //   sum = sum + a;
+            sum = sum + a;
             sum += a;
-            //System.out.println("Wylosowana " + a);
-            //System.out.println("Suma " + sum);
             findMax(a);
             findMin(a);
         }
