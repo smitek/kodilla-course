@@ -22,9 +22,9 @@ public class User {
         int avg = result / users.length;
         System.out.println("średni wiek to " + avg + " lat");
 
-        for (int i = 0; i <users.length; i++)
-            if (users[0].age > avg) {
-                System.out.println(users[i]); // wyśw jakieś dziwne nazwy
+        for (int i = 0; i < users.length; i++)
+            if (users[i].age > avg) {
+                System.out.println(users[i].userName); // wyśw jakieś dziwne nazwy
            }
     }
 }
